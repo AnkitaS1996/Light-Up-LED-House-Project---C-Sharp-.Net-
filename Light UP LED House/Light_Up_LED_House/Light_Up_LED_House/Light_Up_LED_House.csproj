@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2F02DCAD-C158-462A-A749-43425BF5187F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Light_Up_LED_House</RootNamespace>
+    <AssemblyName>Light_Up_LED_House</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Frm_Add_Category.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Add_Category.Designer.cs">
+      <DependentUpon>Frm_Add_Category.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Add_Stock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Add_Stock.Designer.cs">
+      <DependentUpon>Frm_Add_Stock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Billing_Part_Order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Billing_Part_Order.Designer.cs">
+      <DependentUpon>Frm_Billing_Part_Order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Login.Designer.cs">
+      <DependentUpon>Frm_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_MDI_Main_From_LED_Bulb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_MDI_Main_From_LED_Bulb.Designer.cs">
+      <DependentUpon>Frm_MDI_Main_From_LED_Bulb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_View_Product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_View_Product.Designer.cs">
+      <DependentUpon>Frm_View_Product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Variable_Code_Class.cs" />
+    <Compile Include="Main_Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main_Page.Designer.cs">
+      <DependentUpon>Main_Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Order_Details_Info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Order_Details_Info.Designer.cs">
+      <DependentUpon>Frm_Order_Details_Info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Frm_Add_Category.resx">
+      <DependentUpon>Frm_Add_Category.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Add_Stock.resx">
+      <DependentUpon>Frm_Add_Stock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Billing_Part_Order.resx">
+      <DependentUpon>Frm_Billing_Part_Order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Login.resx">
+      <DependentUpon>Frm_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_MDI_Main_From_LED_Bulb.resx">
+      <DependentUpon>Frm_MDI_Main_From_LED_Bulb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_View_Product.resx">
+      <DependentUpon>Frm_View_Product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main_Page.resx">
+      <DependentUpon>Main_Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Order_Details_Info.resx">
+      <DependentUpon>Frm_Order_Details_Info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
