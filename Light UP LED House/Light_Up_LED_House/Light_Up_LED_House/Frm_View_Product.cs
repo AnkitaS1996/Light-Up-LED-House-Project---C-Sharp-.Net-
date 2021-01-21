@@ -26,6 +26,7 @@ namespace Light_Up_LED_House
             try
             {
                 GVObj.ComboboxFill("Select Distinct(Product_Name) from LED_Bulb_Stock_db", "Product_Name",cmb_Product_Name);
+                GVObj.FillDataGridView("Select * from LED_Bulb_Stock_db", dgv_Data);
             }
             catch (Exception ex)
             {
@@ -40,12 +41,25 @@ namespace Light_Up_LED_House
             try
             {
                 GVObj.ComboboxFill("Select (Sub_Product) from LED_Bulb_Stock_db where Product_Name = '" + cmb_Product_Name.Text + "'", "Sub_Product",cmb_Sub_Product);
+                GVObj.FillDataGridView("Select * from LED_Bulb_Stock_db", dgv_Data);
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
             GVObj.Con_Close();
+        }
+
+        private void btn_Reset_Click(object sender, EventArgs e)
+        {
+            cmb_Product_Name.SelectedIndex = -1;
+            cmb_Sub_Product.SelectedIndex = -1;
+            txt_Quantity.Clear();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
